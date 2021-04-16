@@ -1,0 +1,43 @@
+docker
+
+docker images
+
+docker build -t html-project:1.0.0 .
+
+docker images
+
+docker image history <first_few_characters_of_IMAGE_ID>
+docker image history 006
+
+docker run --name <name_of_the_container> -p <pc_port_no>:<container_port_no> <REPOSITORY>:<TAG>
+docker run --name first-container -p 8080:80 html-project:1.0.0
+
+docker images
+
+docker ps -a
+
+docker stop <first_few_characters_of_CONTAINER_ID>
+docker stop 750
+
+docker ps -a
+
+docker start <first_few_characters_of_CONTAINER_ID>
+docker start 750
+
+docker ps -a
+
+docker rm 750
+
+docker ps -a
+
+docker images
+
+docker build -t html-project:1.0.1 .
+
+docker run --name first-container -p 8081:80 html-project:1.0.0
+
+docker run --name second-container -p 8082:80 html-project:1.0.1
+
+docker images
+
+docker ps -a
