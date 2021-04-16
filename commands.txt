@@ -41,3 +41,30 @@ docker run --name second-container -p 8082:80 html-project:1.0.1
 docker images
 
 docker ps -a
+
+docker images
+
+docker rmi <IMAGE_ID>
+docker rmi a9
+
+docker images
+
+docker ps -a
+
+docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 rabbitmq:3-management
+
+docker images
+
+docker ps -a
+
+docker pull redis
+
+docker images
+
+docker ps -a
+
+docker run --name some-redis -d redis
+
+docker images
+
+docker ps -a
